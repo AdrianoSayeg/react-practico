@@ -1,12 +1,15 @@
 {
   "name": "react-shop",
   "version": "1.0.0",
+  "homepage": "https://adrianosayeg.github.io",
   "description": "react eshop",
   "main": "src/index.js",
   "scripts": {
     "test": "test command",
     "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "react",
